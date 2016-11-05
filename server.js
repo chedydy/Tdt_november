@@ -28,7 +28,7 @@ res.writeHead(200, {
 
 'Content-Type': 'text/html',
 
-'Content-Length': data.length
+'Content-Length': data===undefined?0:data.length
 
 });
 
