@@ -32,7 +32,7 @@ res.writeHead(200, {
 
 });
 
-res.write(data);
+res.write(data===undefined?"":data);
 
 res.end();
 
