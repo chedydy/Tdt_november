@@ -22,17 +22,17 @@ processAllFieldsOfTheForm(req, res);
 
 function displayForm(res) {
 
-fs.readFile('form.html', function (err, data) {
+fs.readFile('Form.html', function (err, data) {
 
 res.writeHead(200, {
 
 'Content-Type': 'text/html',
 
-'Content-Length': 1024
+'Content-Length': data.length
 
 });
 
-res.write(data===undefined?"":data);
+res.write(data);
 
 res.end();
 
